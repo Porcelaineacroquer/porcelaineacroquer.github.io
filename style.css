@@ -462,5 +462,29 @@ footer a:hover {
   background: #f7b800;
 }
 
+/* ===== PANIER OVERLAY ===== */
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 90%;
+  max-width: 360px;
+  height: 100vh;
+
+  background: #fff;
+  padding: 20px;
+
+  box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+  z-index: 9999;
+
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+/* Panier ouvert */
+.cart.open {
+  right: 0;
+}
+
 
 
