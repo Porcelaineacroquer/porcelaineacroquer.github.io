@@ -89,12 +89,17 @@
 </nav>
 
 <!-- ================= BOUTIQUE ================= -->
+<!-- ================= BOUTIQUE ================= -->
 <section id="shop">
   <h2>La boutique</h2>
 
   <div class="products">
 
-    <div class="product">
+    <!-- PRODUIT 1 -->
+    <div class="product"
+         data-name="Service à dessert"
+         data-price="139">
+
       <img src="images/service-dessert-porcelaine.jpg"
            alt="Service à dessert en porcelaine peint à la main – création artisanale à Pau">
 
@@ -102,16 +107,24 @@
       <p class="price">139 €</p>
       <p class="product-badge">✔ Pièce peinte à la main</p>
 
-      <button onclick="addTo('Service à dessert', 139)">Ajouter au panier</button>
+      <button class="add-to-cart">Ajouter au panier</button>
 
-      <a class="vinted-btn" href="https://www.vinted.fr/member/292441947" target="_blank">
-        Acheter sur Vinted
+      <a class="vinted-btn"
+         href="https://www.vinted.fr/member/292441947"
+         target="_blank">
+         Acheter sur Vinted
       </a>
 
-      <p class="reassurance">Paiement sécurisé • Retrait en boutique possible</p>
+      <p class="reassurance">
+        Paiement sécurisé • Retrait en boutique possible
+      </p>
     </div>
 
-    <div class="product">
+    <!-- PRODUIT 2 -->
+    <div class="product"
+         data-name="Service à café"
+         data-price="110">
+
       <img src="images/service-cafe-porcelaine.jpg"
            alt="Service à café en porcelaine peint à la main – pièce artisanale">
 
@@ -119,14 +132,20 @@
       <p class="price">110 €</p>
       <p class="product-badge">✔ Pièce peinte à la main</p>
 
-      <button onclick="addTo('Service à café', 110)">Ajouter au panier</button>
+      <button class="add-to-cart">Ajouter au panier</button>
 
-      <a class="vinted-btn" href="https://www.vinted.fr/member/292441947" target="_blank">
-        Acheter sur Vinted
+      <a class="vinted-btn"
+         href="https://www.vinted.fr/member/292441947"
+         target="_blank">
+         Acheter sur Vinted
       </a>
 
-      <p class="reassurance">Paiement sécurisé • Retrait en boutique possible</p>
+      <p class="reassurance">
+        Paiement sécurisé • Retrait en boutique possible
+      </p>
     </div>
+
+  </div>
 
   </div>
 
@@ -269,6 +288,7 @@
 
 </body>
 </html>
+
 
 
 
