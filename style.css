@@ -426,6 +426,25 @@ footer a:hover {
 }
 
 
+/* ===== PANIER : SUPPRESSION ===== */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #999;
+  cursor: pointer;
+}
+
+.remove-item:hover {
+  color: #8b5e3c;
+}
 
 
 
