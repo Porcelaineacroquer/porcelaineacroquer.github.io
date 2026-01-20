@@ -260,3 +260,12 @@ footer {
     padding: 60px 15px;
   }
 }
+
+.trust-bar {
+  background: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  border-bottom: 1px solid #e0e0e0;
+}
