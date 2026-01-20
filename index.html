@@ -24,37 +24,52 @@
 <!-- ================= HEADER ================= -->
 <header>
 <img src="images/logo-porcelaine-a-croquer.png"
-       alt="Porcelaine à Croquer – Boutique artisanale de porcelaine à Pau"
-       class="site-logo">
+     alt="Porcelaine à Croquer – Boutique artisanale de porcelaine à Pau"
+     class="site-logo premium-logo">
   
   <h1>Porcelaine à Croquer</h1>
   <p>Créations en porcelaine peintes à la main – Pau</p>
 
   <div class="header-links">
-   <a class="vinted-btn"
+   <div class="header-links">
+
+  <a class="vinted-btn"
      href="https://www.vinted.fr/member/292441947"
      target="_blank">
-     🛍️ Boutique Vinted
+     Boutique Vinted
   </a>
 
-  <div class="social-links">
+  <div class="social-premium">
+    <span class="follow-label">Suivez-nous</span>
 
     <a href="https://www.instagram.com/porcelaineacroquer/"
        target="_blank"
-       class="social-link">
-       📸 Instagram
+       aria-label="Instagram"
+       class="social-icon">
+      <!-- Instagram SVG -->
+      <svg viewBox="0 0 24 24">
+        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+      </svg>
     </a>
 
     <a href="https://www.facebook.com/porcelaineacroquer"
        target="_blank"
-       class="social-link">
-       📘 Facebook
+       aria-label="Facebook"
+       class="social-icon">
+      <!-- Facebook SVG -->
+      <svg viewBox="0 0 24 24">
+        <path d="M15 3h-3a5 5 0 0 0-5 5v3H5v4h2v6h4v-6h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/>
+      </svg>
     </a>
 
     <a href="https://linktr.ee/PorcelaineACroquerBoutique"
        target="_blank"
-       class="social-link">
-       🌿 Linktree
+       aria-label="Linktree"
+       class="social-icon">
+      <!-- Linktree SVG (stylisé) -->
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2l3 4h-2v6h-2V6H9l3-4zm0 20a3 3 0 0 1-3-3h6a3 3 0 0 1-3 3z"/>
+      </svg>
     </a>
 
     <button onclick="openCart()">🛒 Panier (<span id="cart-count">0</span>)</button>
@@ -248,6 +263,7 @@
 
 </body>
 </html>
+
 
 
 
