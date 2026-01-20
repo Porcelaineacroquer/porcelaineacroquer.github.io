@@ -42,7 +42,11 @@ section h2::after {
 
 /* ================= HEADER ================= */
 header {
-  background: #f1e8de;
+  background: radial-gradient(
+    circle at center,
+    #f6efe8 0%,
+    #f1e8de 70%
+  );
   padding: 45px 20px;
   text-align: center;
 }
@@ -310,10 +314,24 @@ footer a:hover {
   }
 }
 
-/* ================= LOGO ================= */
+/* ===== LOGO PREMIUM ===== */
 .site-logo {
-  max-width: 160px;
-  margin-bottom: 15px;
+  max-width: 220px;              /* logo plus grand */
+  margin-bottom: 22px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+
+  /* fondu / halo élégant */
+  filter:
+    drop-shadow(0 8px 18px rgba(0,0,0,0.25))
+    drop-shadow(0 0 25px rgba(255,255,255,0.35));
+}
+
+/* animation douce au survol */
+.site-logo:hover {
+  transform: scale(1.04);
+  filter:
+    drop-shadow(0 12px 25px rgba(0,0,0,0.35))
+    drop-shadow(0 0 35px rgba(255,255,255,0.45));
 }
 
 /* ================= LIENS SOCIAUX HEADER ================= */
@@ -386,5 +404,6 @@ footer a:hover {
 .social-icon:hover svg {
   fill: #8b5e3c;
 }
+
 
 
