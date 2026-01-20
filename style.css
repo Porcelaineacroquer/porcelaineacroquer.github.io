@@ -310,3 +310,36 @@ footer a:hover {
   }
 }
 
+/* ================= LOGO ================= */
+.site-logo {
+  max-width: 160px;
+  margin-bottom: 15px;
+}
+
+/* ================= LIENS SOCIAUX HEADER ================= */
+.social-links {
+  margin-top: 15px;
+}
+
+.social-link {
+  margin: 0 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= FOOTER LIENS ================= */
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 5px;
+  font-size: 0.9rem;
+}
+
+
