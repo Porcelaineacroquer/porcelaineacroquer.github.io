@@ -405,24 +405,27 @@ footer a:hover {
 }
 
 
-/* ===== INSTAGRAM : CENTRAGE MOBILE DEFINITIF ===== */
+/* ===== INSTAGRAM : CENTRAGE MOBILE FINAL ===== */
 @media (max-width: 768px) {
 
-  /* le conteneur prend toute la largeur */
+  /* conteneur */
   .instagram-feed {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centre les enfants */
+    align-items: center;
   }
 
-  /* chaque carte Instagram */
+  /* bloc Instagram */
   .instagram-feed > blockquote.instagram-media {
+    max-width: 92vw !important;   /* 👈 clé */
+    width: 92vw !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
 }
+
+
 
 
 
