@@ -6,32 +6,22 @@ function addToCart(name, price) {
 }
 
 function updateCart() {
-  const list = document.getElementById("cart-items");
-  const totalEl = document.getElementById("cart-total");
-  const countEl = document.getElementById("cart-count");
-  const paypalItems = document.getElementById("paypal-items");
+  const items = document.getElementById("cart-items");
+  const total = document.getElementById("cart-total");
+  const count = document.getElementById("cart-count");
 
-  list.innerHTML = "";
-  paypalItems.innerHTML = "";
+  items.innerHTML = "";
+  let sum = 0;
 
-  let total = 0;
-
-  cart.forEach((item, index) => {
-    total += item.price;
-
+  cart.forEach(item => {
+    sum += item.price;
     const li = document.createElement("li");
     li.textContent = `${item.name} – ${item.price} €`;
-    list.appendChild(li);
-
-    paypalItems.innerHTML += `
-      <input type="hidden" name="item_name_${index + 1}" value="${item.name}">
-      <input type="hidden" name="amount_${index + 1}" value="${item.price}">
-      <input type="hidden" name="quantity_${index + 1}" value="1">
-    `;
+    items.appendChild(li);
   });
 
-  totalEl.textContent = total;
-  countEl.textContent = cart.length;
+  total.textContent = sum;
+  count.textContent = cart.length;
 }
 
 function openCart() {
